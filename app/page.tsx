@@ -582,7 +582,7 @@ export default function PostmanDashboard() {
               </div>
               <div>
                 <h1 className="text-sm font-bold tracking-tight text-white flex items-center gap-1">
-                  API Tester <span className="text-[10px] bg-indigo-500/20 text-indigo-400 px-1.5 py-0.2 rounded font-semibold border border-indigo-500/30">PRO</span>
+                  API Tester  <span className="text-[10px] bg-indigo-500/20 text-indigo-400 px-1.5 py-0.2 rounded font-semibold border border-indigo-500/30">PRO</span>
                 </h1>
                 <p className="text-[10px] text-slate-400">Enterprise Workspace</p>
               </div>
@@ -853,12 +853,12 @@ export default function PostmanDashboard() {
 
             <input
               type="text"
-              placeholder="e.g. {{baseUrl}}/todos/1"
+              placeholder="enter request URL..."
               value={currentTab.url}
               onChange={(e) => updateCurrentTab({ url: e.target.value })}
               className="w-full flex-1 bg-slate-900 border border-slate-800 text-white text-sm rounded px-4 py-2 outline-none focus:border-blue-500 font-mono transition min-w-0"
             />
-
+s
             <div className="hidden sm:flex gap-2">
               <motion.button
                 whileHover={{ scale: 1.02 }}
