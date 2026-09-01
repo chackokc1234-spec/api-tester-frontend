@@ -858,7 +858,7 @@ export default function PostmanDashboard() {
               onChange={(e) => updateCurrentTab({ url: e.target.value })}
               className="w-full flex-1 bg-slate-900 border border-slate-800 text-white text-sm rounded px-4 py-2 outline-none focus:border-blue-500 font-mono transition min-w-0"
             />
-s
+
             <div className="hidden sm:flex gap-2">
               <motion.button
                 whileHover={{ scale: 1.02 }}
