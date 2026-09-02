@@ -20,8 +20,11 @@ export default function RegisterPage() {
     setLoading(true);
     setError('');
 
-    try {
-      await axios.post('http://localhost:8080/api/auth/register', {
+try {
+      // Dynamically use the Railway URL in production, or localhost on your laptop
+      const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
+
+      await axios.post(`${API_BASE_URL}/api/auth/register`, {
         name,
         email,
         password,
