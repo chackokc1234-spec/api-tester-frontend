@@ -20,10 +20,12 @@ export default function LoginPage() {
     setError('');
 
     try {
-      const response = await axios.post('http://localhost:8080/api/auth/login', {
-        email,
-        password,
-      });
+      const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+
+const response = await axios.post(`${API_BASE_URL}/api/auth/login`, {
+  email,
+  password,
+});
 
       const { token, name, email: userEmail } = response.data;
 
